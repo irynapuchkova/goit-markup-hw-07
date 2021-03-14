@@ -14,38 +14,44 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="page-header">
       <div class="container">
-        <nav class="nav">
-          <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+        <nav class="page-header__nav">
+          <a href="./index.html" class="logo logo--right link"
+            ><span class="logo__subtext">Web</span>Studio</a
+          >
 
-          <ul class="nav-site items">
-            <li class="nav-list unit">
-              <a class="link" href="./index.html">Студия</a>
+          <ul class="site-nav items">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
 
-            <li class="nav-list unit">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
 
-            <li class="nav-list unit">
-              <a class="link" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
 
-          <ul class="nav-contact">
-            <li class="unit">
-              <a class="link" href="mailto:info@devstudio.com">
-                <svg class="mail" width="16" height="12">
+          <ul class="contact-nav">
+            <li class="contact-nav__item">
+              <a class="contact-nav__link" href="mailto:info@devstudio.com">
+                <svg class="contact-nav__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
 
-            <li class="unit">
-              <a class="link" href="tel:+380961111111">
-                <svg class="tel" width="10" height="16">
+            <li class="contact-nav__item">
+              <a class="contact-nav__link" href="tel:+380961111111">
+                <svg class="contact-nav__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -62,25 +68,31 @@
 
       <!-- Portfolio Filters -->
 
-      <section class="filter">
+      <section class="filter-display">
         <div class="container">
-          <ul class="filter-btn items">
-            <li class="unit"><button class="btn" type="button">Все</button></li>
-            <li class="unit">
-              <button class="btn" type="button">Веб-сайты</button>
+          <ul class="button-set items">
+            <li class="button-set__item">
+              <button class="filter-btn btn" type="button">Все</button>
             </li>
-            <li class="unit">
-              <button class="btn" type="button">Приложения</button>
+
+            <li class="button-set__item">
+              <button class="filter-btn btn" type="button">Веб-сайты</button>
             </li>
-            <li class="unit">
-              <button class="btn" type="button">Дизайн</button>
+
+            <li class="button-set__item">
+              <button class="filter-btn btn" type="button">Приложения</button>
             </li>
-            <li class="unit">
-              <button class="btn" type="button">Маркетинг</button>
+
+            <li class="button-set__item">
+              <button class="filter-btn btn" type="button">Дизайн</button>
+            </li>
+
+            <li class="button-set__item filter-set__item--last">
+              <button class="filter-btn btn" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="filter items">
+          <ul class="works-set items">
             <li class="unit">
               <a class="link" href="">
                 <div class="photo-thumb">
@@ -96,7 +108,7 @@
                 </div>
 
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">Технокряк</h2>
+                  <h2 class="filter-name">Технокряк</h2>
                   <p class="filter-brand">Веб-сайт</p>
                 </div>
               </a>
@@ -118,9 +130,7 @@
                 </div>
 
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">
-                    Постер New Orlean vs Golden Star
-                  </h2>
+                  <h2 class="filter-name">Постер New Orlean vs Golden Star</h2>
                   <p class="filter-brand">Дизайн</p>
                 </div>
               </a>
@@ -142,7 +152,7 @@
                 </div>
 
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">Ресторан Seafood</h2>
+                  <h2 class="filter-name">Ресторан Seafood</h2>
                   <p class="filter-brand">Приложение</p>
                 </div>
               </a>
@@ -163,7 +173,7 @@
                   </p>
                 </div>
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">Проект Prime</h2>
+                  <h2 class="filter-name">Проект Prime</h2>
                   <p class="filter-brand">Маркетинг</p>
                 </div>
               </a>
@@ -184,7 +194,7 @@
                   </p>
                 </div>
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">Проект Boxes</h2>
+                  <h2 class="filter-name">Проект Boxes</h2>
                   <p class="filter-brand">Приложение</p>
                 </div>
               </a>
@@ -205,9 +215,7 @@
                   </p>
                 </div>
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">
-                    Inspiration has no Borders
-                  </h2>
+                  <h2 class="filter-name">Inspiration has no Borders</h2>
                   <p class="filter-brand">Веб-сайт</p>
                 </div>
               </a>
@@ -228,9 +236,7 @@
                   </p>
                 </div>
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">
-                    Издание Limited Edition
-                  </h2>
+                  <h2 class="filter-name">Издание Limited Edition</h2>
                   <p class="filter-brand">Дизайн</p>
                 </div>
               </a>
@@ -272,7 +278,7 @@
                   </p>
                 </div>
                 <div class="unit-dsc">
-                  <h2 class="filter-name section-title">Growing Business</h2>
+                  <h2 class="filter-name">Growing Business</h2>
                   <p class="filter-brand">Приложение</p>
                 </div>
               </a>
@@ -282,52 +288,72 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-contacts">
-          <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
-          <address class="footer-address">
-            <p class="footer-rout unit">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@example.com" class="footer-mail link unit"
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="contacts">
+          <a href="./index.html" class="logo logo__footer link"
+            ><span class="logo__subtext">Web</span>Studio</a
+          >
+
+          <address class="contacts-set">
+            <p class="contacts-set__rout">г. Киев, пр-т Леси Украинки, 26</p>
+
+            <a href="mailto:info@example.com" class="contacts-set__connect link"
               >info@example.com</a
             >
-            <a href="tel:+380991111111" class="footer-tel link unit"
+            <a href="tel:+380991111111" class="contacts-set__connect link"
               >+38 099 111 11 11</a
             >
           </address>
         </div>
 
         <div class="join">
-          <h3 class="join-title">присоединяйтесь</h3>
+          <h3 class="footer-title">присоединяйтесь</h3>
 
-          <ul class="social-items">
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+          <ul class="social-net">
+            <li class="social-net__item">
+              <a class="social-net__link social-net__link--footer link" href="">
+                <svg
+                  class="social-net__icon social-net__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-net__item">
+              <a class="social-net__link social-net__link--footer link" href="">
+                <svg
+                  class="social-net__icon social-net__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-net__item">
+              <a class="social-net__link social-net__link--footer link" href="">
+                <svg
+                  class="social-net__icon social-net__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-net__item">
+              <a class="social-net__link social-net__link--footer link" href="">
+                <svg
+                  class="social-net__icon social-net__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -335,23 +361,21 @@
           </ul>
         </div>
 
+        <!-- form footer -->
+
         <form class="form-subscribe">
-          <label class="label-subscribe">Подпишитесь на рассылку </label>
-          <div class="subscribe">
+          <label class="footer-title">Подпишитесь на рассылку</label>
+          <div class="form-subscribe__set">
             <input
-              class="email-subscribe"
+              class="form-subscribe__imput"
               type="email"
               name="email"
               placeholder="E-mail"
             />
-            <button class="subscribe-btn btn" type="submit">
+            <button class="btn subscribe-btn" type="submit">
               Подписаться
-              <svg class="icon-send">
-                <use
-                  href="./images/icons.svg#icon-send"
-                  width="24"
-                  height="24"
-                ></use>
+              <svg class="subscribe-btn__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </div>
