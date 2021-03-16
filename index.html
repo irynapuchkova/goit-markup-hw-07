@@ -14,11 +14,11 @@
   </head>
 
   <body>
-    <!-- page-header -->
+    <!-- header -->
 
-    <header class="page-header">
+    <header class="header">
       <div class="container">
-        <nav class="page-header__nav">
+        <nav class="header__nav">
           <a href="./index.html" class="logo logo--right link"
             ><span class="logo__subtext">Web</span>Studio</a
           >
@@ -26,24 +26,29 @@
           <ul class="site-nav items">
             <li class="site-nav__item">
               <a
-                class="site-nav__link site-nav__link--current"
+                class="site-nav__link site-nav__link--current link"
                 href="./index.html"
                 >Студия</a
               >
             </li>
 
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="site-nav__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
 
             <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
+              <a class="site-nav__link link" href="">Контакты</a>
             </li>
           </ul>
 
           <ul class="contact-nav">
             <li class="contact-nav__item">
-              <a class="contact-nav__link" href="mailto:info@devstudio.com">
+              <a
+                class="contact-nav__link link"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="contact-nav__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -52,7 +57,7 @@
             </li>
 
             <li class="contact-nav__item">
-              <a class="contact-nav__link" href="tel:+380961111111">
+              <a class="contact-nav__link link" href="tel:+380961111111">
                 <svg class="contact-nav__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -68,13 +73,13 @@
       <!-- hero -->
 
       <div class="hero">
-        <section class="hero-section">
-          <h1 class="hero-title">
+        <section class="hero__section">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
 
-          <button data-toggle-backdrop-order class="btn hero__btn">
+          <button data-toggle-backdrop-order class="btn">
             Заказать услугу
           </button>
         </section>
@@ -82,58 +87,58 @@
 
       <!-- Особливості -->
 
-      <section class="special-feature">
+      <section class="feature">
         <h2 class="visually-hidden">Особливості</h2>
 
         <div class="container">
-          <ul class="feature items">
-            <li class="feature__item">
-              <div class="feature__icon">
+          <ul class="feature-list items">
+            <li class="feature-list__item">
+              <div class="feature-list__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-identity_antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">Внимание к деталям</h3>
-              <p class="feature__dsc">
+              <h3 class="feature-list__title">Внимание к деталям</h3>
+              <p class="feature-list__dsc">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
 
-            <li class="feature__item">
-              <div class="feature__icon">
+            <li class="feature-list__item">
+              <div class="feature-list__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-identity_clock"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">Пунктуальность</h3>
-              <p class="feature__dsc">
+              <h3 class="feature-list__title">Пунктуальность</h3>
+              <p class="feature-list__dsc">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
 
-            <li class="feature__item">
-              <div class="feature__icon">
+            <li class="feature-list__item">
+              <div class="feature-list__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-identity_diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">Планирование</h3>
-              <p class="feature__dsc">
+              <h3 class="feature-list__title">Планирование</h3>
+              <p class="feature-list__dsc">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
 
-            <li class="feature__item">
-              <div class="feature__icon">
+            <li class="feature-list__item">
+              <div class="feature-list__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-identity_antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">Современные технологии</h3>
-              <p class="feature__dsc">
+              <h3 class="feature-list__title">Современные технологии</h3>
+              <p class="feature-list__dsc">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -144,24 +149,24 @@
 
       <!-- We are doing -->
 
-      <section class="activity-set">
+      <section class="activity">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="activity__title">Чем мы занимаемся</h2>
 
-          <ul class="activity items">
-            <li class="activity__item">
+          <ul class="activity-list items">
+            <li class="activity-list__item">
               <img src="images/box_1.jpg" alt="Web-site" width="370" />
-              <p class="activity__label">Десктопные приложения</p>
+              <p class="activity-list__label">Десктопные приложения</p>
             </li>
 
-            <li class="activity__item">
+            <li class="activity-list__item">
               <img src="images/box_2.jpg" alt="Apps" width="370" />
-              <p class="activity__label">Мобильные приложения</p>
+              <p class="activity-list__label">Мобильные приложения</p>
             </li>
 
-            <li class="activity__item">
+            <li class="activity-list__item">
               <img src="images/box_3.jpg" alt="Design" width="370" />
-              <p class="activity__label">Дизайнерские решения</p>
+              <p class="activity-list__label">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -169,12 +174,12 @@
 
       <!-- Our Team -->
 
-      <section class="team-panel">
+      <section class="team">
         <div class="container">
-          <h2 class="team-panel__title section-title">Наша команда</h2>
+          <h2 class="team__title">Наша команда</h2>
 
-          <ul class="team">
-            <li class="team__item">
+          <ul class="team-list">
+            <li class="team-list__item">
               <div class="member-thumb">
                 <img
                   src="images/img_ihor.jpg"
@@ -183,9 +188,7 @@
                 />
               </div>
               <div class="member-thumb__content">
-                <h3 class="member-thumb__name section-title">
-                  Игорь Демьяненко
-                </h3>
+                <h3 class="member-thumb__name">Игорь Демьяненко</h3>
                 <p class="member-thumb__pos">Product Designer</p>
 
                 <ul class="social-net">
@@ -236,11 +239,11 @@
               </div>
             </li>
 
-            <li class="team__item">
+            <li class="team-list__item">
               <div class="member-thumb">
                 <img src="images/img_olha.jpg" alt="Ольга_Репина" width="270" />
                 <div class="member-thumb__content">
-                  <h3 class="member-thumb__name section-title">Ольга Репина</h3>
+                  <h3 class="member-thumb__name">Ольга Репина</h3>
                   <p class="member-thumb__pos">Frontend Developer</p>
 
                   <ul class="social-net">
@@ -292,7 +295,7 @@
               </div>
             </li>
 
-            <li class="team__item">
+            <li class="team-list__item">
               <div class="member-thumb">
                 <img
                   src="images/img_nicholas.jpg"
@@ -300,9 +303,7 @@
                   width="270"
                 />
                 <div class="member-thumb__content">
-                  <h3 class="member-thumb__name section-title">
-                    Николай Тарасов
-                  </h3>
+                  <h3 class="member-thumb__name">Николай Тарасов</h3>
                   <p class="member-thumb__pos">Marketing</p>
                   <ul class="social-net">
                     <li class="social-net__item">
@@ -353,7 +354,7 @@
               </div>
             </li>
 
-            <li class="team__item">
+            <li class="team-list__item">
               <div class="member-thumb">
                 <img
                   src="images/img_michael.jpg"
@@ -361,9 +362,7 @@
                   width="270"
                 />
                 <div class="member-thumb__content">
-                  <h3 class="member-thumb__name section-title">
-                    Михаил Ермаков
-                  </h3>
+                  <h3 class="member-thumb__name">Михаил Ермаков</h3>
                   <p class="member-thumb__pos">UI Designer</p>
 
                   <ul class="social-net">
@@ -477,8 +476,8 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__container container">
+    <footer class="footer">
+      <div class="footer__container container">
         <div class="contacts">
           <a href="./index.html" class="logo logo__footer link"
             ><span class="logo__subtext">Web</span>Studio</a
@@ -497,7 +496,7 @@
         </div>
 
         <div class="join">
-          <h3 class="footer-title">присоединяйтесь</h3>
+          <h3 class="join-title">присоединяйтесь</h3>
 
           <ul class="social-net">
             <li class="social-net__item">
@@ -550,10 +549,10 @@
           </ul>
         </div>
 
-        <!-- form footer -->
+        <!-- form-subscribe footer -->
 
         <form class="form-subscribe">
-          <label class="footer-title">Подпишитесь на рассылку</label>
+          <label class="form-subscribe__title">Подпишитесь на рассылку</label>
           <div class="form-subscribe__set">
             <input
               class="form-subscribe__imput"
