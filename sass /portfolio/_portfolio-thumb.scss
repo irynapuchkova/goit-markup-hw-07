@@ -1,3 +1,7 @@
+.link {
+  @extend %link;
+}
+
 .portfolio-thumb {
   position: relative;
 
@@ -42,6 +46,8 @@
 .portfolio-thumb__title {
   margin-top: 0;
   margin-bottom: 4px;
+
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -54,6 +60,8 @@
 
 .portfolio-thumb__filter {
   margin: 0;
+
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.875;

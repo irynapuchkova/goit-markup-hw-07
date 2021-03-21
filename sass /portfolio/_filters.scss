@@ -1,4 +1,4 @@
-.filter-list {
+.filters {
   @extend %items;
 
   display: flex;
@@ -6,7 +6,7 @@
   margin-bottom: 50px;
 }
 
-.filter-list__item {
+.filters__item {
   margin-right: 8px;
 
   &--last {
@@ -14,8 +14,9 @@
   }
 }
 
-.filter-btn {
+.filters-btn {
   @extend %btn;
+
   padding: 6px 22px;
   min-width: min-content;
 
