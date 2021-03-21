@@ -1,0 +1,25 @@
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list__item {
+  margin-right: 8px;
+
+  &--last {
+    margin-right: 0;
+  }
+}
+
+.filter-btn {
+  @extend %btn;
+  padding: 6px 22px;
+  min-width: min-content;
+
+  font-weight: 500;
+  line-height: 1.6;
+
+  color: $title-link-color;
+  background-color: $bg-section-color;
+}
