@@ -20,6 +20,8 @@
 }
 
 .footer-nav__connect {
+  @extend %link;
+
   display: flex;
   margin-bottom: 9px;
 

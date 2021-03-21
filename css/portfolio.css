@@ -1,174 +1,3 @@
-:root {
-  --logo-color: #000000;
-  --header-border: #ececec;
-  --title-link-color: #212121;
-  --text--color: #757575;
-  --accent-color: #2196f3;
-  --bg-primary-color: #ffffff;
-  --bg-footer-color: #2f303a;
-  --bg-section-color: #f5f4fa;
-  --filter-unit: #eeeeee;
-  --hero-bgc: #c4c4c4;
-  --consumer-border: #afb1b8;
-  --filter-color: rgba(0, 0, 0, 0.25);
-  --text-contacts-color: rgba(255, 255, 255, 0.6);
-  --footer-join-bgc: rgba(255, 255, 255, 0.1);
-  --team-border-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  --animation-dur: 250ms;
-  --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
-  background-color: var(--bg-primary-color);
-  color: var(--text--color);
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  margin-top: 0;
-  color: var(--title-link-color);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.site-nav, .filters {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-nav__link, .site-nav__link, .link, .logo, .logo__footer {
-  text-decoration: none;
-}
-
-.logo__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--logo-color);
-  font-family: 'Raleway', sans-serif;
-}
-
-.subscribe-btn, .filters-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-  padding: 0;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  border-color: transparent;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--bg-primary-color);
-  -webkit-transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
-  transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
-}
-
-.subscribe-btn:hover, .filters-btn:hover, .subscribe-btn:focus, .filters-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--bg-primary-color);
-  outline: none;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-  padding: 0;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  border-color: transparent;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--bg-primary-color);
-  -webkit-transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
-  transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
-}
-
-.btn:hover, .btn:focus {
-  background-color: var(--accent-color);
-  color: var(--bg-primary-color);
-  outline: none;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.subscribe-btn {
-  position: relative;
-  padding: 10px 60px 10px 28px;
-}
-
-.subscribe-btn__icon {
-  position: absolute;
-  right: 28px;
-}
-
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -449,6 +278,177 @@ summary {
   display: list-item;
 }
 
+:root {
+  --logo-color: #000000;
+  --header-border: #ececec;
+  --title-link-color: #212121;
+  --text--color: #757575;
+  --accent-color: #2196f3;
+  --bg-primary-color: #ffffff;
+  --bg-footer-color: #2f303a;
+  --bg-section-color: #f5f4fa;
+  --filter-unit: #eeeeee;
+  --hero-bgc: #c4c4c4;
+  --consumer-border: #afb1b8;
+  --filter-color: rgba(0, 0, 0, 0.25);
+  --text-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-join-bgc: rgba(255, 255, 255, 0.1);
+  --team-border-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --animation-dur: 250ms;
+  --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--bg-primary-color);
+  color: var(--text--color);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  margin-top: 0;
+  color: var(--title-link-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-nav, .filters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-nav__link, .site-nav__link, .link, .logo, .logo__footer, .footer-nav__connect {
+  text-decoration: none;
+}
+
+.logo__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+}
+
+.subscribe-btn, .filters-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--bg-primary-color);
+  -webkit-transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
+  transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
+}
+
+.subscribe-btn:hover, .filters-btn:hover, .subscribe-btn:focus, .filters-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--bg-primary-color);
+  outline: none;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--bg-primary-color);
+  -webkit-transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
+  transition: background-color var(--animation-dur) var(--animation-type), color var(--animation-dur) var(--animation-type);
+}
+
+.btn:hover, .btn:focus {
+  background-color: var(--accent-color);
+  color: var(--bg-primary-color);
+  outline: none;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-btn {
+  position: relative;
+  padding: 10px 60px 10px 28px;
+}
+
+.subscribe-btn__icon {
+  position: absolute;
+  right: 28px;
+}
+
 .header {
   border-bottom: 1px solid var(--header-border);
 }
@@ -590,6 +590,7 @@ summary {
 }
 
 .filters-btn {
+  height: 40px;
   padding: 6px 22px;
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
