@@ -1,4 +1,6 @@
 .filter-list {
+  @extend %items;
+
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -20,6 +22,6 @@
   font-weight: 500;
   line-height: 1.6;
 
-  color: $title-link-color;
-  background-color: $bg-section-color;
+  color: var(--title-link-color);
+  background-color: var(--bg-section-color);
 }

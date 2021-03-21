@@ -26,10 +26,10 @@
 
   transform: translatey(101%);
   transition: transform var(--animation-dur) var(--animation-type);
-}
 
-.portfolio-list__item:hover .portfolio-thumb__overlay {
-  transform: translatey(0);
+  .portfolio-list__item:hover & {
+    transform: translatey(0);
+  }
 }
 
 .portfolio-thumb__dsc {
